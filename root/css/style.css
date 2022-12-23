@@ -1,0 +1,80 @@
+/*------GENERAL STYLES------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 15px;
+}
+
+/*------CARDS-----*/
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    /*border: 2px solid purple;*/
+    width: 260px;
+    height: 460px;
+    padding: 36px;
+    gap: 30px;
+}
+.cardTitle {
+    font-family: 'Big Shoulders Display';
+    font-size: 36px;
+    color: #fff;
+}
+.cardText {
+    font-family: 'Lexend Deca';
+    color: hsla(0, 0%, 100%, 0.442);
+}
+.button {
+    margin-top: 30%;
+    border-radius: 36px;
+    width: 150px;
+    height: 40px;
+    background-color: #fff;
+}
+.card.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px ;
+}
+.button .buttonLink {
+    text-decoration: none;
+    font-family: 'Lexend Deca';
+    color: rgb(252, 128, 4);
+}
+.card.suvs {
+    background-color:hsl(184, 100%, 22%) ;
+}
+.card.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+.img {
+    width: 64px;
+    height: 40px;
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 780px) {
+    .flexContainer {
+        gap: 15px
+    }
+    .card.suvs, .card.luxury, .card.sedans {
+        border-radius: 10px;
+    }
+}
