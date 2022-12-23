@@ -10,6 +10,7 @@ body {
 
 /*------CARDS-----*/
 .flexContainer {
+    margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
     height: 600px;
@@ -40,6 +41,7 @@ body {
     width: 150px;
     height: 40px;
     background-color: #fff;
+    border: none;
 }
 .card.sedans {
     background-color: hsl(31, 77%, 52%);
@@ -70,7 +72,14 @@ body {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
-
+/*----PSEUDO SELECTORS----*/
+.button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #fff;
+    color: #fff;
+}
+/*------MEDIA QUERIES------*/
 @media screen and (max-width: 780px) {
     .flexContainer {
         gap: 15px
@@ -79,6 +88,11 @@ body {
         border-radius: 10px;
     }
     .attribution {
-        margin-top: 100%;
+        margin-top: 400px;
+    }
+}
+@media screen and (max-width: 534px) {
+    .attribution {
+        margin-top: 850px;
     }
 }
