@@ -64,7 +64,8 @@ body {
 
 
 .attribution { 
-    font-size: 11px; text-align: center; 
+    font-size: 11px; 
+    text-align: center;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
@@ -76,5 +77,8 @@ body {
     }
     .card.suvs, .card.luxury, .card.sedans {
         border-radius: 10px;
+    }
+    .attribution {
+        margin-top: 100%;
     }
 }
