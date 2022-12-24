@@ -47,10 +47,16 @@ body {
     background-color: hsl(31, 77%, 52%);
     border-radius: 10px 0 0 10px ;
 }
-.button .buttonLink {
+.buttonLink .button {
     text-decoration: none;
     font-family: 'Lexend Deca';
     color: rgb(252, 128, 4);
+}
+.buttonLink .buttonLuxury {
+    color: hsl(179, 100%, 13%);
+}
+.buttonLink .buttonSuvs {
+    color: hsl(184, 100%, 22%);
 }
 .card.suvs {
     background-color:hsl(184, 100%, 22%) ;
@@ -64,7 +70,7 @@ body {
     height: 40px;
 }
 
-
+/*----FOOTER STYLE----*/
 .attribution { 
     font-size: 11px; 
     text-align: center;
@@ -72,12 +78,17 @@ body {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
 /*----PSEUDO SELECTORS----*/
-.button:hover {
+.button:hover{
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0);
     border: 1px solid #fff;
     color: #fff;
+}
+.buttonLink:hover {
+    color: #fff;
+    
 }
 /*------MEDIA QUERIES------*/
 @media screen and (max-width: 780px) {
@@ -91,6 +102,7 @@ body {
         margin-top: 400px;
     }
 }
+/*---BREACK POINT 534 ADJUST FOOTER----*/
 @media screen and (max-width: 534px) {
     .attribution {
         margin-top: 850px;
